@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/return_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回" />
+
+        <Button
+            android:id="@+id/set_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="系统设置" />
+
+        <Button
+            android:id="@+id/me_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/return_button"
+            android:text="我" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/me_setup_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         >
+
+        <ImageView
+            android:id="@+id/head_picture_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/name_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/head_picture_imageview"
+            android:text="张秀才"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/mood_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name_textview"
+            android:layout_toRightOf="@+id/head_picture_imageview"
+            android:text="今天心情不错"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/address_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/mood_textview"
+            android:layout_below="@+id/mood_textview"
+            android:text="国粹苑C座4层D11"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <Button
+            android:id="@+id/recharge_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/kaixindou_textview"
+            android:text="去充值"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/kaixindou_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/recharge_button"
+            android:layout_alignBottom="@+id/recharge_button"
+            android:layout_alignParentLeft="true"
+            android:text="50开心豆"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/market_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="开心商城"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+    <Button 
+        android:id="@+id/mission_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="我的任务"
+        />
+    <Button 
+        android:id="@+id/share_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="我的分享"
+        />
+    <Button 
+        android:id="@+id/goods_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="我的商品"
+        />
+     <Button 
+        android:id="@+id/code_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="填写邀请码"
+        />
+     <Button 
+        android:id="@+id/friends_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="邀请好友"
+        />
+     <Button 
+        android:id="@+id/message_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="我的消息"
+        />
+
+</LinearLayout>
